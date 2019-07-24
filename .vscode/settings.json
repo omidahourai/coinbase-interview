@@ -1,0 +1,15 @@
+{
+  "window.title": "Coinbase — ${activeEditorMedium}",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    ".vscode": true,
+    "public": false,
+    "node_modules": true,
+    "**/*.test.js": true,
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#491F35",
+    "titleBar.activeBackground": "#662C4B",
+    "titleBar.activeForeground": "#FCF9FB"
+  }
+}
