@@ -1,5 +1,5 @@
 import App from 'components/App'
-import { compose, withProps, lifecycle } from 'recompose'
+import { compose, withProps, lifecycle, withHandlers } from 'recompose'
 import { connect } from 'react-redux'
 import * as selectors from 'selectors'
 import * as actions from 'actions'
@@ -14,6 +14,11 @@ export default compose(
     async componentDidMount() {
       const {props} = this
       props.request('http://api/url')
+    }
+  }),
+  withHandlers({
+    handleSelectedOption: props => option => {
+      console.log('app got',option)
     }
   }),
   withProps(props => console.log(props)),
